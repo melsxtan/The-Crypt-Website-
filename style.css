@@ -1,0 +1,1074 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background:#2d8f8f;
+}
+
+svg{
+    width:99vw;
+}
+
+/*==================OPENER PAGE=================*/
+h1{
+font-size:250px;
+font-family: 'Bebas Neue', cursive;
+margin-top:10%;
+animation:title-float 2s ease-in-out alternate infinite; ;
+}
+
+@keyframes title-float{
+    from{
+       filter:drop-shadow(-10px 0px 0px #000000);
+    }
+    to{
+        transform:scale(1.01);
+        filter:drop-shadow(-35px 0px 0px #000000);
+    }
+}
+
+h2{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+    font-size:40px;
+    animation:subtitle-glow 2s ease-in-out alternate infinite;
+}
+
+@keyframes subtitle-glow{
+    from{
+
+    }
+
+    to{
+        filter:drop-shadow(1px 0px 5px #E0C595);
+    }
+}
+
+.opening{
+    color:rgb(255, 177, 8);
+    height: 120vh;
+    background-color:rgb(19, 19, 34);
+    text-align: center;
+    padding-top: 8%;
+    padding-right: 50%; 
+    position: relative;
+    background-image:url(images/tree.png);
+    background-size:100vh;
+}
+
+
+#flame1{
+    position:absolute;
+    animation:flame-bounce 0.3s ease-in-out alternate infinite; 
+    transform-origin: bottom;
+}
+
+#flame2{
+    position:absolute;
+    animation:flame-bounce 1s ease-in-out alternate infinite; 
+    transform-origin: bottom;
+}
+
+#flame3{
+    position:absolute;
+    animation:flame-bounce 0.8s ease-in-out alternate infinite; 
+    transform-origin: bottom;
+}
+
+@keyframes flame-bounce{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.009);
+        
+    }
+}
+
+.crypt-def{
+    font-size:26px;
+    position:absolute;
+    z-index:144;
+    margin-left:67%;
+    margin-top:10%;
+}
+
+.tome{
+    position:absolute;
+    z-index:145;
+    width:15%;
+    height:30%;
+    margin-left:40%;
+    margin-top:5%;
+    animation:tome-bounce 0.8s ease-in-out alternate infinite; 
+    transform-origin: bottom;
+}
+
+@keyframes tome-bounce{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.05);
+        filter:saturate(2);
+        filter:drop-shadow(1px 0px 5px #E0C595);
+    }
+}
+
+.tome:hover{
+    transition:1s;
+    opacity:0
+}
+
+/*=================NAV BAR==================*/
+body{
+    padding:0;
+    margin:0;
+}
+
+.nessie-icon{
+    width:30%;
+    margin-bottom:200px;
+    margin-left:70px;
+    filter:saturate(0);
+}
+
+.nessie-icon:hover {
+    transition: 0.5s;
+    filter:saturate(3);
+    transform: scale(1.5)
+}
+
+.bigfoot-icon{
+    width:20%;
+    z-index:100;
+    margin-top:140px;
+    margin-left:150px;
+    filter:saturate(0);
+}
+
+.bigfoot-icon:hover {
+    transition: 0.5s;
+    filter:saturate(3);
+    transform: scale(1.5) 
+}
+
+.chupa-icon{
+    width:30%;
+    margin-right:200px;
+    filter:saturate(0);
+}
+
+.chupa-icon:hover {
+    transition: 0.5s;
+    filter:saturate(3);
+    transform: scale(1.5) 
+}
+
+.navbar-link{
+    position:absolute;
+}
+
+.navbar-wrapper{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    z-index:143;
+    left:40%;
+    padding-bottom:48%;
+}
+
+.navbar{
+    width:20rem;
+    height:20rem;
+    background-color:rgb(255, 177, 8);
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    transform: scale(0) rotate(-180deg);
+    transition: transform 0.5s;
+}
+
+.change .navbar{
+    transform:scale(1) rotate(0deg);
+}
+
+.navbar-btn{
+    position:absolute;
+    width:6rem;
+    height:6rem;
+    background-color:rgb(0, 135, 224);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.navbar-btn:hover {
+    transition: 0.5s;
+    filter:saturate(3);
+    transform: scale(1.1) 
+}
+
+.change .navbar-btn {
+    transform: rotate(45deg);
+}
+
+.navbar-btn {
+    color:white;
+    font-size:2.5rem;
+    transition:transform 0.5s;
+}
+
+
+/*-=================NESSIE PAGE=================*/
+.lochness {
+    text-align: center;
+    background-color:rgb(150, 175, 175);
+    padding-top:400px;
+ 
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size:90px;
+    margin:0;
+    color:teal;
+    padding:50px;
+}
+
+.loch-subtitle{
+    font-size:40px;
+}
+
+p{
+    font-size:30px;
+    color:rgb(214, 252, 255);
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.loch-para{
+    color:white;
+    font-family: 'Indie Flower', cursive;
+    background-color:rgb(94, 107, 107);
+    padding:50px;
+    opacity:60%;
+    margin: 4em 10% 20em;
+}
+
+.rowboat{
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 75%;
+    transform: translateX(-50%);
+    animation: floating 1s ease-in-out alternate infinite; 
+}
+
+.nessie {
+    position: absolute;
+    left: 20%;
+    top: 3%;
+}
+
+.island {
+    height:30%;
+    width:99vw;
+    display: block;
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity:50%;
+    filter:blur(40px);
+}
+
+.water {    
+    height: 200vh;
+    position: relative;
+
+}
+
+.water:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: teal;
+    opacity: 0.7;
+}
+
+@keyframes floating{
+    from{
+      transform:translateY(1px);
+    }
+    to{
+      transform:translateY(20px);
+    }
+}
+
+
+.gallery-container{
+    background:#2d8f8f;
+    padding:50px;
+    z-index:60;
+}
+.surgeonphoto{
+    padding-left:20%;
+    height:75vh;
+    width:75vw;
+}
+.surgeonphoto-zoom{
+    margin-left:10%;
+    height:75vh;
+    width:75vw;
+    background-color:white;
+}
+    
+.hoax{
+    margin-left:28%;
+    height:75vh;
+    width:40vw;
+}
+
+.surgeon-para{
+    display:inline-block;
+}
+
+.legend-title{
+    font-size:100px;
+    text-align:center;
+    color:rgb(29, 29, 29);
+    padding:0;
+    position:absolute;
+    z-index:95;
+    left: 32%;
+    top:55%; 
+    animation: floating 1s ease-in-out alternate;
+}
+
+.theboyds{
+    margin-left:28%;
+    height:60vh;
+    width:40vw;
+}
+
+.sketch{
+    display:inline-block;
+    margin-top:5%;
+    width:49%;
+    height:49%;
+}
+
+.encounter-title{
+    font-size:250px;
+    text-align:center;
+    color:rgb(16, 30, 34);
+    animation: encounter-float 2s infinite ease-in-out alternate;
+}
+
+@keyframes encounter-float{
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(50px);
+    }
+}
+
+.boyd-quote{
+    color:rgb(204, 203, 255);
+    font-style: italic;
+    
+}
+
+.close-encounters{
+    height:300vh;
+}
+
+.rines-image1{
+    width:40%;
+    margin:0;
+    padding-left:5%;
+    transform:rotate(5deg);
+    position:absolute;
+    z-index:142;
+}
+
+.rines-image2{
+    width:15%;
+    margin-left:850px;
+    transform:rotate(-2deg);
+    position:absolute;
+    z-index:143;
+}
+
+
+.rines-image2:hover{
+    transition:1s;
+    transform: scale(1.5) 
+}
+
+.rines-image3{
+    padding-left:1200px;
+    transform:rotate(3deg);
+    position:absolute;
+    z-index:142;
+}
+
+.rines-para{
+    padding-top:500px;
+    padding-left:50px;
+    position:absolute;
+    z-index:142;
+    }
+
+.rines-title{
+    color:rgb(197, 231, 245);
+    font-size:50px;
+}
+    
+.sonar-title{
+    color:rgb(197, 231, 245);
+    font-size:50px;
+    padding-top:1200px;
+    padding-left:60px;
+}
+
+.sonar-reading{
+    position:absolute;
+    z-index:141;
+    background:#2d8f8f;
+}
+
+.atkin-quote{
+    color:rgb(204, 203, 255);
+    font-style: italic;
+    padding-left:5%;
+    text-align:center;
+    background:#2d8f8f;
+}
+
+.sonar-img{
+    margin-left:30%;
+}
+
+.sonar-img:hover{
+    transition:1s;
+    transform: scale(1.5) 
+}
+
+.sonar-para{
+    padding-left:5%;
+}
+
+/*=================BIGFOOT PAGE=================*/
+.bigfoot{
+    padding-top:50px;
+    background-color:peru;
+    height:250vh;
+}
+
+.bigfoot-title{
+    padding-top:200px;
+    font-size: 90px;
+    text-align:center;
+    color:rgb(59, 41, 31);
+}
+
+.bf-para-container{
+position:absolute;
+z-index:100;
+}
+
+.bf-subtitle{
+    font-size:40px;
+    text-align:center;
+}
+
+.bf-para{
+    text-align:center;
+    padding:70px;
+    margin:70px;
+    background-color:rgb(133, 71, 51);
+    opacity:90%;
+}
+
+.bigfoot-image{
+position:absolute;
+margin-top:35%;
+z-index:80;
+}
+
+.forest-bg{
+position:absolute;
+z-index:70;
+width:99vw;
+}
+
+.grassy-fg{
+position:absolute;
+z-index:90;
+margin-top:40%;
+width:99vw;
+filter:drop-shadow(1px 0px 5px #E0C595);
+}
+
+.patt-title{
+    padding-top:1400px;
+    position:absolute;
+    z-index:101;
+    color:rgb(59, 41, 31);
+    font-size:50px;
+    margin-left:750px;
+}
+.bigfoot-video{
+    margin-top:1500px;
+    position:absolute;
+    z-index:102;
+    padding-left:20px;
+    border:0px;
+}
+
+.bigfoot-video:hover{
+    transition:1s;
+    transform: scale(2.2);
+    transform-origin: left; 
+}
+
+.patt-para{
+    font-size:25px;
+    position:absolute;
+    z-index:101;
+    padding-top:1450px;
+    padding-left:570px;
+    text-align:center;
+}
+
+.patt-image{
+    width:20%;
+    height:30%;
+    position:absolute;
+    z-index:101;
+    margin-top:1500px;
+    margin-left:1500px;
+}
+
+
+/*=================CHUPACABRA PAGE=================*/
+.chupacabra{
+    background-color:#223322;
+    text-align:center;
+    height:200vh;
+}
+
+.chupa-title{
+    padding-top:50px;
+    font-size: 90px;
+    text-align:center;
+    color:rgb(140, 179, 156);
+}
+
+.chupa-para-container{
+    position:absolute;
+    z-index:100;
+}
+    
+.chupa-subtitle{
+    font-size:30px;
+    text-align:center;
+}
+    
+.chupa-para{
+    text-align:center;
+    padding:30px;
+    margin:70px;
+    background-color:rgb(46, 65, 55);
+    opacity:80%;
+}
+
+.gradient-bg{
+position:absolute; 
+right:0.01%;  
+height:80vh;
+width:100vw;
+z-index:50;
+}
+.fence{
+position:absolute;  
+right:1px;
+width:80vw;
+z-index:75;  
+}
+
+#eyes{
+  animation:eye-colour 2s infinite linear, head-anim 3s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#arm_fore{
+    animation:arm-move 1.5s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#arm_back{
+    animation:arm-move 1s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#sheep{
+    animation: sheep-breathe 2s infinite;
+    transform-origin: bottom;
+    animation-direction: alternate-reverse;
+}
+
+#sheepleg1{
+    animation:sheep-legs 5s infinite, sheep-breathe 2s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#sheepleg2{
+    animation:sheep-legs 3s infinite, sheep-breathe 1s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#sheepleg3{
+    animation:sheep-legs 3s infinite, sheep-breathe 3s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#sheepleg4{
+    animation:sheep-legs 3s infinite, sheep-breathe 2s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#tail{
+    animation: tail-move 3s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+#clouds{
+    animation:cloud-move 20s infinite;
+}
+
+#chupa_head{
+    animation: head-anim 3s infinite;
+    transform-origin: center;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eye-colour {
+    from{
+        filter:saturate(0);
+    }
+    to{
+    filter:saturate(3);
+    }
+}
+
+@keyframes arm-move{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-5deg);
+    }
+}
+
+@keyframes sheep-breathe{
+    from{
+        transform:scale(1)
+    }
+    to{
+        transform:scale(1.02)
+    }
+}
+
+@keyframes sheep-legs{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-5deg);
+    }
+}
+
+@keyframes head-anim{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-5deg);
+    }
+}
+
+@keyframes tail-move{
+    from{
+        transform:rotate(0deg);
+    }
+    to{ 
+        transform:rotate(-2deg);
+        
+    }
+}
+
+@keyframes cloud-move{
+    from{
+    transform:translateX(0px)
+    }
+    to{
+    transform:translateX(200px)
+    }
+}
+
+.chupa-img{
+    position:absolute;
+    margin-top:20px;
+    right:35%;
+    z-index:144;
+}
+
+.chupa-img:hover{
+    transition:1s;
+    transform: scale(2) 
+}
+/*=================FOOTER=================*/
+
+.footer{
+    text-align:center;
+}
+
+.explore-button{
+    position:absolute;
+    z-index:146;
+    padding-left:50%;
+    padding-bottom:30px;
+    right:45%;
+}
+.button{
+    width:200px;
+}
+
+.button:hover {
+    transition: 0.5s;
+    transform: scale(1.5) 
+}
+
+@media only screen and (max-width: 768px) {
+
+svg{
+    width:1200px;
+}
+
+.navbar-wrapper{
+display:none;
+}
+
+h1{
+    font-size:200px;
+    margin-left:100px;
+}
+
+.opening{
+    width:150vh;
+    height:290vh;
+    background-size:200%;
+}
+
+h2{
+    margin-left:10%;
+    font-size:70px;
+}
+
+
+.lochness{
+    width:150vh;
+    height:320vh;
+}
+
+.tome{
+    left:160px;
+    padding:0;
+    margin:0;
+    width:60%;
+    height:40%;
+    margin-top:80%;
+}
+
+.crypt-def{
+    padding:0;
+    margin:0;
+    padding-top:93%;
+    margin-left:20%;
+    font-size:60px;
+}
+
+h3{
+    font-size:200px;
+    padding-right:175px;
+}
+
+.loch-subtitle{
+    font-size:50px;
+    padding-right:160px;
+
+}
+
+.loch-para{
+    margin:0;
+    font-size:50px;
+    padding-right:160px;
+}
+
+.legend-title{
+    top:0;
+    margin-right:1000px;
+
+}
+
+.glider{
+    margin-top:270%;
+    width:500%;
+    height:500%;
+}
+
+.surgeonphoto{
+    padding:0;
+    height:30%;
+    width:70%;
+}
+
+.surgeonphoto-zoom{
+    padding:0;
+    height:30%;
+    width:70%;
+}
+
+.hoax{
+    height:40%;
+    width:70%;
+}
+
+.theboyds{
+    height:40%;
+    width:70%;
+}
+.sketch{
+    height:30%;
+    width:40%;
+}
+
+.surgeon-para{
+    padding:0;
+    margin:0;
+    font-size:50px;
+}
+
+.boyd-para{
+    font-size:50px;
+}
+
+.boyd-quote{
+    font-size:50px;
+}
+
+.encounter-title{
+    margin-top:1000px;
+    text-align:center;
+}
+
+.rines-title{
+    font-size:80px;
+    padding:0;
+    margin:0;
+}
+
+.rines-image1{
+    width:250%;
+    height:70%;
+    padding-top:40px;
+
+}
+
+.rines-image2{
+    width:100%;
+    height:70%;
+    margin:0;
+    margin-left:300px;
+    margin-top:600px;
+}
+
+.rines-image3{
+    padding:0;
+    margin:0;
+    margin-top:1200px;
+}
+
+.rines-para{
+    padding:0;
+    margin:0;
+    margin-top:455%;
+    font-size:20px;
+}
+
+.sonar-title{
+    margin-top:170%;
+    font-size:70px;
+}
+
+.sonar-img{
+    padding:0;
+    margin:0;
+}
+
+.bigfoot{
+    margin-top:2900px;
+    padding-right:1100px;
+    height:1500vh;
+}
+
+.bigfoot-title{
+    font-size:200px;
+    margin-left:200px;
+}
+
+.forest-bg{
+    width:0;
+    width:400%;
+}
+    
+.grassy-fg{
+    width:0;
+    width:400%;
+    margin-top:500px;
+}
+
+.bigfoot-image{
+    margin-top:80%;
+}
+
+.bf-subtitle{
+    padding:0;
+    margin:0;
+    padding-right:400px;
+    font-size:40px;
+}
+
+.bf-para{
+    margin:0;
+    font-size:50px;
+    padding-right:800px;
+    padding-left:400px;
+    margin-top:600px;
+}
+
+.patt-title{
+    margin:0;
+    padding:0;
+    margin-top:4000px;
+    margin-left:120%;
+    text-align:center;
+    font-size:70px;
+}
+
+.bigfoot-video{
+    margin-top:4400px;
+    width:275%;
+    height:100%;
+}
+
+.patt-image{
+    padding:0;
+    margin:0;
+    margin-top:5200px;
+    margin-left:55px;
+    height:100%;
+    width:250%;
+}
+
+.patt-para{
+    padding:0;
+    margin-top:6000px;
+    margin-left:100%;
+    font-size:50px;
+
+}
+
+.chupacabra{
+    height:1000vh;
+    width:300vw;
+    height:700vh;
+}
+
+.chupa-title{
+    font-size:200px;
+}
+
+.chupa-subtitle{
+    font-size:30px;
+    padding:0;
+    margin:0;
+    margin-left:60px;
+
+}
+
+.chupa-para{
+    margin:0;
+    font-size:50px;
+    padding-right:300px;
+    padding-left:300px;
+    margin-left:50px;
+    margin-top:100px;
+}
+
+.chupakill-para{
+    margin-top:2400px;
+    font-size:50px;
+}
+
+.chupa-img{
+    width:200%;
+    height:50%;
+    padding:0;
+    margin:0;
+    left:0;
+    left:40%;
+}
+
+.footer{
+    font-size:60px;
+
+}
+
+.explore-button{
+padding:0;
+margin:0;
+right:0;
+left:20%;
+padding-left:100%;
+}
+
+}
